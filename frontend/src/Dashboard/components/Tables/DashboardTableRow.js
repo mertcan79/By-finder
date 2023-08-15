@@ -12,7 +12,7 @@ import {
 import React from "react";
 
 function DashboardTableRow(props) {
-  const { name, rooms, price, sqfts, quality, score } = props;
+  const { name, rooms, price, sqfts, quality } = props;
   const textColor = useColorModeValue("gray.900", "white");
   return (
     <Tr>
@@ -58,11 +58,6 @@ function DashboardTableRow(props) {
       <Td>
       <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
           {quality}
-        </Text>
-        </Td>
-        <Td>
-      <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
-          {score}
         </Text>
         </Td>
     </Tr>

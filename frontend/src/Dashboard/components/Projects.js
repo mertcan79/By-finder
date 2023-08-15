@@ -50,7 +50,6 @@ const Projects = ({ title, captions, data }) => {
                 price={row.price}
                 sqfts= {row.sqfts}
                 quality= {row.quality}
-                score= {row.score}
               />
             );
           })}

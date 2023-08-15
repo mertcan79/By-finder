@@ -62,7 +62,6 @@ def bayesian_search_task(search_params):
     }
     full_results_df = pd.DataFrame(data=full_results, columns=["latitude", "longitude", "price", "name", 
                                                            "sqfts", "rooms", "quality"])
-
     full_results = filter_flats_based_on_search(full_results_df, user_search_raw)
 
     # Process each flat's raw data to be compatible with Bayesian network
@@ -75,8 +74,8 @@ def bayesian_search_task(search_params):
             'Price': prepare_bayesian_features('Price', flat['price'])
         }
         processed_flats.append({**flat, **processed_flat})
+    user_search["Quality"] = 4
     # Score each flat based on user search and Bayesian model
-
     scored_flats = []
     for flat in processed_flats:
         evidence = {

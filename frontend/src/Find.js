@@ -129,7 +129,7 @@ function FindTab() {
           <Projects
             title={"Flats - Bayesian Way"}
             amount={price}
-            captions={["Name", "Rooms", "Price", "Sqfts", "Quality", "Score"]}
+            captions={["Name", "Rooms", "Price", "Sqfts", "Quality"]}
             data={tableDataBayesian}
           />
         </Box>

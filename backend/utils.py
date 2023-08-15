@@ -119,18 +119,15 @@ def prepare_bayesian_features(key, value):
     elif key in ["SearchQuality", "Quality"]:
         if value <= 1:
             return 1
-        elif value <= 1.5:
-            return 2
         elif value <= 2:
-            return 3
-        elif value <= 2.5:
-            return 4
+            return 2
         elif value <= 3:
-            return 5
+            return 3
         elif value <= 4:
-            return 6
-        else:
-            return 7
+            return 4
+        elif value <= 5:
+            return 5
+
 
     elif key in ["SearchPrice", "Price"]:
         if value <= 1000:
@@ -147,7 +144,7 @@ def prepare_bayesian_features(key, value):
             return 6
         else:
             return 7
-        
+
     return value
 
 
