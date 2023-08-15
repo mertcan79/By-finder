@@ -74,7 +74,6 @@ def bayesian_search_task(search_params):
             'Price': prepare_bayesian_features('Price', flat['price'])
         }
         processed_flats.append({**flat, **processed_flat})
-    user_search["Quality"] = 4
     # Score each flat based on user search and Bayesian model
     scored_flats = []
     for flat in processed_flats:
