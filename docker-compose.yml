@@ -1,0 +1,17 @@
+version: "3"
+services:
+  python_app:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    ports:
+      - "8000:8000"
+    # Other configurations for your Python app (e.g., volumes, environment variables)
+
+  js_app:
+    build:
+      context: .
+      dockerfile: Dockerfile.js
+    ports:
+      - "3000:3000"
+    # Other configurations for your JavaScript app (e.g., volumes, environment variables)
