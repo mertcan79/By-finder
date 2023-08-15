@@ -1,5 +1,5 @@
 # ByFinder
-ByFinder is a state-of-the-art, probabilistic-based system for apartment recommendations that employs Bayesian networks to provide personalized and reliable recommendations to users. The problem it addresses is the current lack of reliability and personalization in existing apartment recommendation systems, particularly in their inability to incorporate uncertainty in data and the lack of consideration of individual user preferences.
+ByFinder is a state-of-the-art, probabilistic-based system for apartment recommendations that employs Bayesian networks to provide personalized and reliable recommendations to users. The problem it addresses is the current lack of reliability and personalization in existing apartment recommendation systems, particularly in their inability to recommended flats using approximations around the search parameters.
 ![alt text](img/find.png)
 ## Real-life Cases
 The beauty of ByFinder is that it can be used in everyday scenarios. Consider a person who is new to the city and is searching for an apartment. With traditional methods, the individual would have to spend numerous hours trawling through websites to find their perfect apartment. With ByFinder, this person will just input their preferences once and ByFinder will provide a list of apartments that best match these preferences, even considering the uncertain elements.
